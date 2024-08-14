@@ -1,3 +1,9 @@
+# recurcive algorithm
+# time complexity of O(nlog(n)) for average and best case
+#                    O(n^2) for worst case if the array is already sorted
+
+# Space complexity of O(nlog(n)) due ti recurcision
+
 
 def quicksort(arr, left, right):
     if left < right:
@@ -26,3 +32,4 @@ arr = [2,3,5,66,7,8,2]
 print(arr)
 quicksort(arr, 0, len(arr)-1)
 print(arr)
+
