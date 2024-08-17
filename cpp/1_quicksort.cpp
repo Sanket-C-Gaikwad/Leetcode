@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Function to swap two elements
+// Function to swap two elements &a is referencing the original value of arrays, any change in reference will change the memory location pointed by array
 void swap(int &a, int &b) {
     int temp = a;
     a = b;
