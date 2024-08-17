@@ -47,9 +47,11 @@ void printArray(int arr[], int size) {
 // Main function
 int main() {
     int arr[] = {10, 7, 8, 9, 1, 5};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int n = sizeof(arr) / sizeof(arr[0]); // size of one element of the array is 4 byte (32 bit), ie 24/4 = 6 numbers
 
     cout << "Original array: ";
+
+    // or std::cout << "Original array: ";
     printArray(arr, n);
 
     quickSort(arr, 0, n - 1);
